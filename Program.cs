@@ -16,7 +16,7 @@ ConfigureForm(form);
 
 
 var nameField = (PdfTextField)(form.Fields["NameField"]);
-nameField.Value = new PdfString("Ivan Brevenko");
+nameField.Value = new PdfString("Іван Бревенко", PdfStringEncoding.Unicode);
 
 
 var dateField = (PdfTextField)(form.Fields["DateField"]);
@@ -24,7 +24,7 @@ dateField.Value = new PdfString("2022/06/11");
 
 
 var explanationField = (PdfTextField)(form.Fields["ExplanationField"]);
-explanationField.Value = new PdfString("There is nothing to say");
+explanationField.Value = new PdfString("Немає, що сказати", PdfStringEncoding.Unicode);
 
 myTemplate.Save(outputPath);
 
